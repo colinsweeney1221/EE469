@@ -1,0 +1,13 @@
+module mux8_1 (out, in, sel);
+	output out;
+	input [7:0] in;
+	input [2:0] sel;
+	
+	logic mux1, mux2;
+	
+	mux4_1 heyy (mux1, in[0:3], sel[2:1]);
+	mux4_1 lava (mux2, in[4:7], sel[2:1]);
+	
+	mux2_1 yooo (out, mux1, mux2, sel[0]);
+	
+endmodule

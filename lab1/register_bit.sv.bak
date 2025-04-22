@@ -1,0 +1,10 @@
+module register_bit (out, writeData, writeEnable, reset, clk);
+	output out;
+	input writeData, writeEnable, reset, clk;
+	
+	logic D;
+	
+	mux2_1 (D, out, writeData, writeEnable);
+	D_FF   (out, D, reset, clk);
+	
+endmodule 

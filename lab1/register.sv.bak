@@ -1,0 +1,14 @@
+module register (out, writeData, writeEnable, reset, clk);
+	output [63:0] out;
+	input [63:0] writeData;
+	input writeEnable, reset, clk;
+	
+	genvar i;
+	
+	generate
+		for (i = 0; i < 64; i++) begin : bits
+			register_bit (out[i], writeData[i], writeEnable, reset, clk);
+		end
+	endgenerate
+	
+endmodule 

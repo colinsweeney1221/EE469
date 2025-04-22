@@ -1,0 +1,12 @@
+module mux4_1 (in, sel, out);
+	output out;
+	input [3:0] in;
+	input [1:0] sel;
+
+	logic mux1, mux2;
+	
+	mux2_1 top (in[3], in[2], sel[1], mux1);
+	mux2_1 bottom (in[1], in[0], sel[1], mux2); 
+	mux2_1 middle (mux1, mux2, sel[0], out);
+
+endmodule

@@ -1,0 +1,15 @@
+`timescale 1ps/1ps
+
+module mux2_1_reg(out, i0, i1, sel);
+	output out;
+	input [1:0] in;
+	input sel;
+	
+	logic notSel, top, bottom;
+
+	not #(50) a (notSel, sel);
+	and #(50) b (top, in0, notSel);
+	and #(50) c (bottom, in1, sel);
+	or  #(50) d (out, top, bottom);
+
+endmodule 

@@ -1,0 +1,1160 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:26:17 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or16_1
+# 	or64_1_testbench
+# End time: 12:26:17 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 12:26:17 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# ** Warning: (vsim-3015) ./or64_1.sv(9): [PCDPC] - Port size (4) does not match connection size (32) for port 'in'. The port definition is at: ./or4_1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/dut/yur/b/a File: ./or4_1.sv
+# ** Warning: (vsim-3015) ./or64_1.sv(10): [PCDPC] - Port size (4) does not match connection size (32) for port 'in'. The port definition is at: ./or4_1.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench/dut/yur/b/b File: ./or4_1.sv
+# ** Error: Cannot open macro file: alu_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: alu_wave.do
+#     while executing
+# "do alu_wave.do"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:30:07 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 12:30:07 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:30:08 on Apr 18,2025, Elapsed time: 0:03:51
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 12:30:08 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# ** Error: Cannot open macro file: alu_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: alu_wave.do
+#     while executing
+# "do alu_wave.do"
+add wave -position end  sim:/alu_testbench/delay
+add wave -position end  sim:/alu_testbench/ALU_PASS_B
+add wave -position end  sim:/alu_testbench/ALU_ADD
+add wave -position end  sim:/alu_testbench/ALU_SUBTRACT
+add wave -position end  sim:/alu_testbench/ALU_AND
+add wave -position end  sim:/alu_testbench/ALU_OR
+add wave -position end  sim:/alu_testbench/ALU_XOR
+add wave -position end  sim:/alu_testbench/A
+add wave -position end  sim:/alu_testbench/B
+add wave -position end  sim:/alu_testbench/cntrl
+add wave -position end  sim:/alu_testbench/result
+add wave -position end  sim:/alu_testbench/negative
+add wave -position end  sim:/alu_testbench/zero
+add wave -position end  sim:/alu_testbench/overflow
+add wave -position end  sim:/alu_testbench/carry_out
+add wave -position end  sim:/alu_testbench/i
+add wave -position end  sim:/alu_testbench/test_val
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:32:27 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 12:32:27 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:32:28 on Apr 18,2025, Elapsed time: 0:02:20
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 12:32:28 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# 10000000.00 ns testing addition
+add wave -position end  sim:/alu_testbench/dut/crodie/in
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:50:55 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 12:50:55 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:50:56 on Apr 18,2025, Elapsed time: 0:18:28
+# Errors: 33, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 12:50:56 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# 10000000.00 ns testing addition
+add wave -position end  sim:/alu_testbench/dut/crodie/sel
+add wave -position end  sim:/alu_testbench/dut/crodie/out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:51:43 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 12:51:43 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:51:44 on Apr 18,2025, Elapsed time: 0:00:48
+# Errors: 33, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 12:51:44 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# ** Error: Assertion error.
+#    Time: 800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1 ms  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 1800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 2800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 3900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 4600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5800 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 5900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6100 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 6700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7500 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 7900 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8400 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 8600 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9200 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# ** Error: Assertion error.
+#    Time: 9700 us  Scope: alu_testbench File: ./alu.sv Line: 78
+# 10000000.00 ns testing addition
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:12:35 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 13:12:36 on Apr 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 13:12:36 on Apr 18,2025, Elapsed time: 0:20:52
+# Errors: 33, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 13:12:36 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing addition
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:21:06 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 13:21:06 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:21:07 on Apr 18,2025, Elapsed time: 0:08:31
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 13:21:07 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# ** Error: (vsim-3043) ./alu.sv(100): Unresolved reference to 'check_result'.
+#    Time: 0 ps  Iteration: 0  Instance: /alu_testbench File: ./alu.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 12
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:21:29 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 13:21:29 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 13:21:07 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing simple addition
+# 10100000.00 ns testing addition with carryout
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 94
+# 10200000.00 ns testing addition with overflow
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 100
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:28:13 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 13:28:14 on Apr 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 13:28:14 on Apr 18,2025, Elapsed time: 0:07:07
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 13:28:14 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing simple addition
+# 10100000.00 ns testing addition with carryout
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 94
+# 10200000.00 ns testing addition with overflow
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/emmax/School/EE 469/lab2_v4/lab2/alu_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:49:55 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 13:49:55 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:49:56 on Apr 18,2025, Elapsed time: 0:21:42
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 13:49:56 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing simple addition
+# 10100000.00 ns testing addition with carryout
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 94
+# 10200000.00 ns testing addition with overflow
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:26 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 14:02:26 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:02:28 on Apr 18,2025, Elapsed time: 0:12:32
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 14:02:28 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing simple addition
+# 10100000.00 ns testing addition with carryout
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 94
+# 10200000.00 ns testing addition with overflow
+# 10300000.00 ns testing SUBTRACT (5 - 3)
+# 10400000.00 ns testing SUBTRACT (0 - 1)
+# 10500000.00 ns testing SUBTRACT overflow
+# 10600000.00 ns testing AND
+# 10700000.00 ns testing OR
+# 10800000.00 ns testing XOR
+# ** Error: Assertion error.
+#    Time: 10900 us  Scope: alu_testbench File: ./alu.sv Line: 138
+# 10900000.00 ns testing XOR (A == B)
+# ** Error: Assertion error.
+#    Time: 11 ms  Scope: alu_testbench File: ./alu.sv Line: 146
+# 11000000.00 ns All tests complete.
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:15:02 on Apr 18,2025
+# vlog -reportprogress 300 ./adder.sv ./alu.sv ./alustim.sv ./bitwise_and.sv ./bitwise_or.sv ./bitwise_xor.sv ./flags.sv ./full_adder.sv ./half_adder.sv ./lab2.sv ./mux2_1.sv ./mux2_1_v2.sv ./mux4_1.sv ./mux64x8_1.sv ./mux8_1.sv ./or16_1.sv ./or32_1.sv ./or4_1.sv ./or64_1.sv ./or8_1.sv 
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module alu_testbench
+# -- Compiling module alustim
+# -- Compiling module bitwise_and
+# -- Compiling module bitwise_and_testbench
+# -- Compiling module bitwise_or
+# -- Compiling module bitwise_or_testbench
+# -- Compiling module bitwise_xor
+# -- Compiling module bitwise_xor_testbench
+# -- Compiling module full_adder
+# -- Compiling module full_adder_testbench
+# -- Compiling module half_adder
+# -- Compiling module half_adder_testbench
+# -- Compiling module lab2
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_v2
+# -- Compiling module mux4_1
+# -- Compiling module mux64x8_1
+# -- Compiling module mux64x8_1_testbench
+# -- Compiling module mux8_1
+# -- Compiling module or16_1
+# -- Compiling module or32_1
+# -- Compiling module or4_1
+# -- Compiling module or64_1
+# -- Compiling module or64_1_testbench
+# -- Compiling module or8_1
+# 
+# Top level modules:
+# 	alu_testbench
+# 	alustim
+# 	bitwise_and_testbench
+# 	bitwise_or_testbench
+# 	bitwise_xor_testbench
+# 	full_adder_testbench
+# 	half_adder_testbench
+# 	lab2
+# 	mux64x8_1_testbench
+# 	or64_1_testbench
+# End time: 14:15:02 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:15:03 on Apr 18,2025, Elapsed time: 0:12:35
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work alu_testbench 
+# Start time: 14:15:03 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.alu_testbench
+# Loading work.alu
+# Loading work.adder
+# Loading work.or64_1
+# Loading work.or32_1
+# Loading work.or16_1
+# Loading work.or8_1
+# Loading work.or4_1
+# Loading work.bitwise_or
+# Loading work.bitwise_and
+# Loading work.bitwise_xor
+# Loading work.mux64x8_1
+# Loading work.mux2_1
+# Loading work.full_adder
+# Loading work.half_adder
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1_v2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#    0.00 ns testing PASS_A operations
+# 10000000.00 ns testing simple addition
+# 10100000.00 ns testing addition with carryout
+# ** Error: Assertion error.
+#    Time: 10200 us  Scope: alu_testbench File: ./alu.sv Line: 94
+# 10200000.00 ns testing addition with overflow
+# 10300000.00 ns testing SUBTRACT (5 - 3)
+# 10400000.00 ns testing SUBTRACT (0 - 1)
+# 10500000.00 ns testing SUBTRACT overflow
+# 10600000.00 ns testing AND
+# 10700000.00 ns testing OR
+# 10800000.00 ns testing XOR
+# ** Error: Assertion error.
+#    Time: 10900 us  Scope: alu_testbench File: ./alu.sv Line: 138
+# 10900000.00 ns testing XOR (A == B)
+# ** Error: Assertion error.
+#    Time: 11 ms  Scope: alu_testbench File: ./alu.sv Line: 146
+# 11000000.00 ns All tests complete.
+# End time: 14:17:46 on Apr 18,2025, Elapsed time: 0:02:43
+# Errors: 3, Warnings: 0

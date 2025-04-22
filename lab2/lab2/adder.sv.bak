@@ -1,0 +1,18 @@
+module adder (out, carry_out, subtract, a, b);
+	output [63:0] out;
+	output carry_out;
+	input [63:0] a, b;
+	input subtract;
+	
+	logic [64:0] carrys;
+	assign carrys[0] = 1'b0;
+	
+	genvar i;
+	
+	generate
+		for (i = 0; i < 64; i++) begin : adders
+			full_adder a (out[i], carrys[i+1], a[i], b[i], carrys[i]);
+		end
+	endgenerate
+	
+endmodule 

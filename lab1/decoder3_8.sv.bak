@@ -1,0 +1,13 @@
+module decoder3_8 (out, in, enable);
+	output [7:0] out;
+	input [2:0] in;
+	input enable;
+	
+	logic [1:0] out1_2;
+	
+	decoder1_2 ();
+	
+	decoder2_4 top    ();
+	decoder2_4 bottom ();
+	
+endmodule 

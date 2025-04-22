@@ -1,0 +1,5 @@
+|lab1
+out << in.DB_MAX_OUTPUT_PORT_TYPE
+in => out.DATAIN
+
+

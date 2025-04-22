@@ -1,0 +1,9 @@
+module register_file (readOut1, readOut2, data1, data2, writeReg, writeData, writeEnable, reset, clk);
+	output [63:0] readOut1, readOut2;
+	input [4:0] data1, data2, writeReg;
+	input [63:0] writeData;
+	input writeEnable, reset, clk;
+	
+	logic [31:0] writeSelect;
+	
+	

@@ -1,0 +1,72 @@
+`timescale 1ns/1ps
+
+module regfile (readOut1, readOut2, data1, data2, writeReg, writeData, writeEnable, reset, clk);
+	output [63:0] readOut1, readOut2;
+	input [4:0] data1, data2, writeReg;
+	input [63:0] writeData;
+	input writeEnable, reset, clk;
+	
+	logic [31:0] writeSelect;
+	
+	decoder5_32 a (wireSelect, writeReg, writeEnable);
+	
+	logic [31:0][63:0] regArray;
+	
+	genvar i;
+	
+	generate
+		for (i = 0; i < 32; i++) begin : registers
+			register b (regArray[i], writeData, writeEnable, reset, clk);
+		end
+	endgenerate
+	
+	assign regArray[31] = 0;
+	
+	mux64 c (data1, regArray, read1);
+	mux64 d (data2, regArray, read2);
+	
+endmodule 
+
+
+module regfile_testbench();
+	logic [63:0] readOut1, readOut2;
+	logic [4:0] dat1, data2, writeReg;
+	logic [63:0] writeData;
+	logic writeEnable, reset, CLOCK_50;
+	
+	parameter CLOCK_PERIOD=100;
+	initial begin
+		CLOCK_50 <= 0;
+		forever #(CLOCK_PERIOD/2) CLOCK_50 <= ~CLOCK_50; // Forever toggle the clock
+	end
+	
+	register_file e (readOut1, readOut2, data1, data2, writeReg, writeData, writeEnable, reset, CLOCK_50);
+	
+	initial begin
+		
+		reset <= 1;
+		reset <= 0;
+		writeEnable <= 0;
+		writeReg <= 4;
+		writeData <= 64'b1111111111111111111111111111111111111111111111111111111111111111;
+		writeEnable <= 1;
+		// delay
+		writeEnable <= 0;
+		writeReg <= 20;
+		writeEnable <= 1;
+		//delay
+		writeEnable <= 0;
+		writeReg <= 15;
+		writeEnable <= 1;
+		//delay
+		writeEnable <= 0;
+		data1 <= 4;
+		data2 <= 15
+		data1 <= 20;
+		
+		
+		$stop;
+		
+	end
+	
+endmodule 

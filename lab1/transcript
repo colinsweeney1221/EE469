@@ -1,0 +1,79 @@
+# do {.\runlab.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:57:22 on Apr 18,2025
+# vlog -reportprogress 300 ./D_FF.sv ./decoder1_2.sv ./decoder2_4.sv ./decoder3_8.sv ./decoder4_16.sv ./decoder5_32.sv ./lab1.sv ./mux16_1.sv ./mux2_1.sv ./mux2_1_reg.sv ./mux32_1.sv ./mux4_1.sv ./mux64.sv ./mux8_1.sv ./regfile.sv ./register.sv ./register_bit.sv ./register_file.sv ./regstim.sv 
+# -- Compiling module D_FF
+# -- Compiling module decoder1_2
+# -- Compiling module decoder2_4
+# -- Compiling module decoder3_8
+# -- Compiling module decoder4_16
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_testbench
+# -- Compiling module lab1
+# -- Compiling module mux16_1
+# -- Compiling module mux2_1
+# -- Compiling module mux2_1_reg
+# -- Compiling module mux32_1
+# -- Compiling module mux32_1_testbench
+# -- Compiling module mux4_1
+# -- Compiling module mux64
+# -- Compiling module mux64_testbench
+# -- Compiling module mux8_1
+# -- Compiling module regfile
+# -- Compiling module regfile_testbench
+# -- Compiling module register
+# -- Compiling module register_testbench
+# -- Compiling module register_bit
+# -- Compiling module register_bit_testbench
+# -- Compiling module register_file
+# -- Compiling module register_file_testbench
+# -- Compiling module regstim
+# 
+# Top level modules:
+# 	decoder5_32_testbench
+# 	lab1
+# 	mux32_1_testbench
+# 	mux64_testbench
+# 	regfile_testbench
+# 	register_testbench
+# 	register_bit_testbench
+# 	register_file
+# 	register_file_testbench
+# 	regstim
+# End time: 15:57:22 on Apr 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work regfile_testbench 
+# Start time: 15:57:22 on Apr 18,2025
+# Loading sv_std.std
+# Loading work.regfile_testbench
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder1_2
+# Loading work.decoder4_16
+# Loading work.decoder3_8
+# Loading work.decoder2_4
+# Loading work.mux64
+# Loading work.mux32_1
+# Loading work.mux16_1
+# Loading work.mux8_1
+# Loading work.mux4_1
+# Loading work.mux2_1
+# Loading work.register
+# Loading work.register_bit
+# Loading work.mux2_1_reg
+# Loading work.D_FF
+# ** Warning: Design size of 11921 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 2500.00 ns Attempting overwrite of register 31, which should always be 0
+# 7500.00 ns Writing pattern to all registers.
+# 317500.00 ns Checking pattern.
+# ** Note: $stop    : ./regfile.sv(99)
+#    Time: 477500 ns  Iteration: 1  Instance: /regfile_testbench
+# Break in Module regfile_testbench at ./regfile.sv line 99
+# End time: 16:03:53 on Apr 18,2025, Elapsed time: 0:06:31
+# Errors: 0, Warnings: 1

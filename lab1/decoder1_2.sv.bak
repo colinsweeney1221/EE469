@@ -1,0 +1,11 @@
+module decoder1_2 (out, in, enable);
+	output [1:0] out;
+	input in, enable;
+	
+	logic notIn;
+	
+	not (notIn, in);
+	and (out[0], notIn, enable);
+	and (out[1], in, enable);
+
+endmodule

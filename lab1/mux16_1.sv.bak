@@ -1,0 +1,13 @@
+module mux16_1 (out, in, sel);
+	output out;
+	input [15:0] in;
+	input [3:0] sel;
+	
+	logic mux1, mux2;
+	
+	mux8_1 (mux1, in[8:15], sel[3:1]);
+	mux8_1 (mux2, in[7:0],  sel[3:1]);
+	
+	mux2_1 (out, mux1, mux2, sel[0]);
+	
+endmodule

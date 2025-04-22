@@ -1,0 +1,19 @@
+module mux64 (out, in, sel);
+	output [63:0] out;
+	input [31:0][63:0] in;
+	input [4:0] sel;
+	
+	genvar i, j;
+	
+	generate
+		for (i = 0; i < 64; i++) begin : eachMux
+			wire [31:0] bitSlice;
+			
+			for (j = 0; j < 32; j++) begin : slicing
+				
+			end
+			
+			mux32_1 (out[i], bitSlice, sel);
+		end
+	endgenerate
+endmodule

@@ -1,0 +1,1 @@
+C:\Users\colin\EE469\modelsim_ase\win32aloem\modelsim.exe

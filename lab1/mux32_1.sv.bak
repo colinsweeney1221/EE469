@@ -1,0 +1,13 @@
+module mux32_1 (out, in, sel);
+	output out;
+	input [31:0] in;
+	input [4:0] sel;
+	
+	logic mux1, mux2;
+	
+	mux16_1 (mux1, in[16:31], sel[4:1]);
+	mux16_1 (mux2, in[0:15],  sel[4:1]);
+	
+	mux2_1 (out, mux1, mux2, sel[0]);
+	
+endmodule

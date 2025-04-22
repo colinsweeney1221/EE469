@@ -1,0 +1,12 @@
+module mux2_1(i0, i1, sel, out);
+	output out;
+	input i0, i1, sel;
+	
+	Logic notSel, and0NotSel, and1Sel 
+
+	not bah (sel, notSel);
+	and yur (i0, notSel, and0NotSel);
+	and xd (i1, sel, and1Sel);
+	or ts (and0NotSel, and1Sel, out);
+
+endmodule
