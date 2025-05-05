@@ -1,0 +1,11 @@
+module full_adder(out, carry_out, a, b, carry_in);
+	output out, carry_out;
+	input a, b, carry_in;
+	
+	logic half, carry1, carry2;
+	
+	half_adder a (half, carry1, a, b);
+	half_adder b (out, carry2, half, carry_in);
+	or c #50 (carry_out, carry1, carry2);
+	
+endmodule

@@ -1,0 +1,7 @@
+module alu (A, B, cntrl, result, negative, zero, overflow, carry_out);
+	output [63:0] result;
+	output negative, zero, overflow, carry_out;
+	input [63:0] A, B;
+	input [2:0] cntrl;
+	
+	

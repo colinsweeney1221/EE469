@@ -1,0 +1,10 @@
+module half_adder(out, carry_out, a, b);
+	output out, carry_out;
+	input a, b;
+	
+	xor a #50 (out, a, b);
+	and b #50 (carry_out, a, b);
+	
+endmodule 
+
+

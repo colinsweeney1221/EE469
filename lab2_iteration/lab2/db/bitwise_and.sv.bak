@@ -1,0 +1,12 @@
+module bitwise_and (out, A, B);
+	output [63:0] out;
+	input [63:0] A, B;
+	
+	genvar i;
+	
+	generate
+		for (i = 0; i < 64; i++) begin : oring
+			and #50 a (out[i], A[i], B[i]);
+		end
+	endgenerate
+endmodule 

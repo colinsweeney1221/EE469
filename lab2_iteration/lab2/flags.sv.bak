@@ -1,0 +1,8 @@
+module flags (negative, zero, overflow, carry_out, result, carry_outs, 
+
+
+// negative = result[63]
+// zero = result or itself
+// overflow = carry_outs[0] xor carry_outs[1]
+// carry_out = carry_outs[1]
+
