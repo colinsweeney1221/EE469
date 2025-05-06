@@ -1,0 +1,14 @@
+`timescale 1ps/1ps
+
+module or4_1 (out, in);
+	output out;
+	input [3:0] in;
+	
+	logic [1:0] or_out;
+	
+	or #(50) a (or_out[0], in[0], in[1]);
+	or #(50) b (or_out[1], in[2], in[3]);
+	
+	or #(50) c (out, or_out[0], or_out[1]);
+	
+endmodule 
