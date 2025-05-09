@@ -22,7 +22,6 @@ module regfile (ReadData1, ReadData2, WriteData, ReadRegister1, ReadRegister2, W
 	
 	assign regArray[31] = 64'b0;
 	
-	
 	mux64 c (ReadData1, regArray, ReadRegister1);
 	mux64 d (ReadData2, regArray, ReadRegister2);
 	
