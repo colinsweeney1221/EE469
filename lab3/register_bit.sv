@@ -9,7 +9,8 @@ module register_bit (out, writeData, writeEnable, reset, clk);
 	mux2_1_reg a (D, out, writeData, writeEnable);
 	D_FF   b (out, D, reset, clk);
 	
-endmodule 
+endmodule
+
 
 
 module register_bit_testbench();
@@ -42,4 +43,4 @@ module register_bit_testbench();
 		
 	end
 	
-endmodule 
+endmodule
