@@ -1,0 +1,21 @@
+`timescale 1ns/1ps
+
+module mux64x2_1 (out, in, sel);
+	input [1:0][63:0] in;
+	input sel;
+	output [63:0] out;
+	
+	genvar i, j;
+	
+	generate
+		for (i = 0; i < 64; i++) begin : eachMux
+			logic [1:0] bitSlice;
+			
+			for (j = 0; j < 2; j++) begin : slicing
+				assign bitSlice[j] = in[j][i];
+			end
+			
+			mux8_1 a (out[i], bitSlice, sel);
+		end
+	endgenerate
+endmodule 

@@ -1,0 +1,296 @@
+Analysis & Synthesis report for Lab3
+Thu May 08 22:55:03 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu May 08 22:55:03 2025           ;
+; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name               ; Lab3                                        ;
+; Top-level Entity Name       ; cpu                                         ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; cpu                ; Lab3               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; State Machine Processing                                                        ; User-Encoded       ; Auto               ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 22          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Thu May 08 22:54:53 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file math.sv
+    Info (12023): Found entity 1: mult File: C:/Users/emmax/School/EE 469/lab3/math.sv Line: 6
+    Info (12023): Found entity 2: shifter File: C:/Users/emmax/School/EE 469/lab3/math.sv Line: 36
+    Info (12023): Found entity 3: shifter_testbench File: C:/Users/emmax/School/EE 469/lab3/math.sv Line: 51
+    Info (12023): Found entity 4: mult_testbench File: C:/Users/emmax/School/EE 469/lab3/math.sv Line: 71
+Info (12021): Found 2 design units, including 2 entities, in source file instructmem.sv
+    Info (12023): Found entity 1: instructmem File: C:/Users/emmax/School/EE 469/lab3/instructmem.sv Line: 17
+    Info (12023): Found entity 2: instructmem_testbench File: C:/Users/emmax/School/EE 469/lab3/instructmem.sv Line: 57
+Info (12021): Found 2 design units, including 2 entities, in source file datamem.sv
+    Info (12023): Found entity 1: datamem File: C:/Users/emmax/School/EE 469/lab3/datamem.sv Line: 12
+    Info (12023): Found entity 2: datamem_testbench File: C:/Users/emmax/School/EE 469/lab3/datamem.sv Line: 70
+Info (12021): Found 1 design units, including 1 entities, in source file regstim.sv
+    Info (12023): Found entity 1: regstim File: C:/Users/emmax/School/EE 469/lab3/regstim.sv Line: 4
+Info (12021): Found 2 design units, including 2 entities, in source file register_file.sv
+    Info (12023): Found entity 1: register_file File: C:/Users/emmax/School/EE 469/lab3/register_file.sv Line: 1
+    Info (12023): Found entity 2: register_file_testbench File: C:/Users/emmax/School/EE 469/lab3/register_file.sv Line: 28
+Info (12021): Found 2 design units, including 2 entities, in source file register_bit.sv
+    Info (12023): Found entity 1: register_bit File: C:/Users/emmax/School/EE 469/lab3/register_bit.sv Line: 3
+    Info (12023): Found entity 2: register_bit_testbench File: C:/Users/emmax/School/EE 469/lab3/register_bit.sv Line: 15
+Info (12021): Found 2 design units, including 2 entities, in source file register.sv
+    Info (12023): Found entity 1: register File: C:/Users/emmax/School/EE 469/lab3/register.sv Line: 3
+    Info (12023): Found entity 2: register_testbench File: C:/Users/emmax/School/EE 469/lab3/register.sv Line: 18
+Info (12021): Found 2 design units, including 2 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/emmax/School/EE 469/lab3/regfile.sv Line: 3
+    Info (12023): Found entity 2: regfile_testbench File: C:/Users/emmax/School/EE 469/lab3/regfile.sv Line: 34
+Info (12021): Found 2 design units, including 2 entities, in source file or64_1.sv
+    Info (12023): Found entity 1: or64_1 File: C:/Users/emmax/School/EE 469/lab3/or64_1.sv Line: 3
+    Info (12023): Found entity 2: or64_1_testbench File: C:/Users/emmax/School/EE 469/lab3/or64_1.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file or32_1.sv
+    Info (12023): Found entity 1: or32_1 File: C:/Users/emmax/School/EE 469/lab3/or32_1.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file or16_1.sv
+    Info (12023): Found entity 1: or16_1 File: C:/Users/emmax/School/EE 469/lab3/or16_1.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file or8_1.sv
+    Info (12023): Found entity 1: or8_1 File: C:/Users/emmax/School/EE 469/lab3/or8_1.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file or4_1.sv
+    Info (12023): Found entity 1: or4_1 File: C:/Users/emmax/School/EE 469/lab3/or4_1.sv Line: 3
+Info (12021): Found 2 design units, including 2 entities, in source file mux64x8_1.sv
+    Info (12023): Found entity 1: mux64x8_1 File: C:/Users/emmax/School/EE 469/lab3/mux64x8_1.sv Line: 3
+    Info (12023): Found entity 2: mux64x8_1_testbench File: C:/Users/emmax/School/EE 469/lab3/mux64x8_1.sv Line: 23
+Info (12021): Found 2 design units, including 2 entities, in source file mux64.sv
+    Info (12023): Found entity 1: mux64 File: C:/Users/emmax/School/EE 469/lab3/mux64.sv Line: 3
+    Info (12023): Found entity 2: mux64_testbench File: C:/Users/emmax/School/EE 469/lab3/mux64.sv Line: 25
+Info (12021): Found 2 design units, including 2 entities, in source file mux32_1.sv
+    Info (12023): Found entity 1: mux32_1 File: C:/Users/emmax/School/EE 469/lab3/mux32_1.sv Line: 3
+    Info (12023): Found entity 2: mux32_1_testbench File: C:/Users/emmax/School/EE 469/lab3/mux32_1.sv Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file mux16_1.sv
+    Info (12023): Found entity 1: mux16_1 File: C:/Users/emmax/School/EE 469/lab3/mux16_1.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_1.sv
+    Info (12023): Found entity 1: mux8_1 File: C:/Users/emmax/School/EE 469/lab3/mux8_1.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux4_1.sv
+    Info (12023): Found entity 1: mux4_1 File: C:/Users/emmax/School/EE 469/lab3/mux4_1.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_v2.sv
+    Info (12023): Found entity 1: mux2_1_v2 File: C:/Users/emmax/School/EE 469/lab3/mux2_1_v2.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1_reg.sv
+    Info (12023): Found entity 1: mux2_1_reg File: C:/Users/emmax/School/EE 469/lab3/mux2_1_reg.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.sv
+    Info (12023): Found entity 1: mux2_1 File: C:/Users/emmax/School/EE 469/lab3/mux2_1.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file lab2.sv
+    Info (12023): Found entity 1: lab2 File: C:/Users/emmax/School/EE 469/lab3/lab2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab1.sv
+    Info (12023): Found entity 1: lab1 File: C:/Users/emmax/School/EE 469/lab3/lab1.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file half_adder.sv
+    Info (12023): Found entity 1: half_adder File: C:/Users/emmax/School/EE 469/lab3/half_adder.sv Line: 3
+    Info (12023): Found entity 2: half_adder_testbench File: C:/Users/emmax/School/EE 469/lab3/half_adder.sv Line: 12
+Info (12021): Found 2 design units, including 2 entities, in source file full_adder.sv
+    Info (12023): Found entity 1: full_adder File: C:/Users/emmax/School/EE 469/lab3/full_adder.sv Line: 3
+    Info (12023): Found entity 2: full_adder_testbench File: C:/Users/emmax/School/EE 469/lab3/full_adder.sv Line: 17
+Info (12021): Found 0 design units, including 0 entities, in source file flags.sv
+Info (12021): Found 2 design units, including 2 entities, in source file decoder5_32.sv
+    Info (12023): Found entity 1: decoder5_32 File: C:/Users/emmax/School/EE 469/lab3/decoder5_32.sv Line: 3
+    Info (12023): Found entity 2: decoder5_32_testbench File: C:/Users/emmax/School/EE 469/lab3/decoder5_32.sv Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file decoder4_16.sv
+    Info (12023): Found entity 1: decoder4_16 File: C:/Users/emmax/School/EE 469/lab3/decoder4_16.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file decoder3_8.sv
+    Info (12023): Found entity 1: decoder3_8 File: C:/Users/emmax/School/EE 469/lab3/decoder3_8.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file decoder2_4.sv
+    Info (12023): Found entity 1: decoder2_4 File: C:/Users/emmax/School/EE 469/lab3/decoder2_4.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file decoder1_2.sv
+    Info (12023): Found entity 1: decoder1_2 File: C:/Users/emmax/School/EE 469/lab3/decoder1_2.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff.sv
+    Info (12023): Found entity 1: D_FF File: C:/Users/emmax/School/EE 469/lab3/D_FF.sv Line: 3
+Info (12021): Found 2 design units, including 2 entities, in source file bitwise_xor.sv
+    Info (12023): Found entity 1: bitwise_xor File: C:/Users/emmax/School/EE 469/lab3/bitwise_xor.sv Line: 3
+    Info (12023): Found entity 2: bitwise_xor_testbench File: C:/Users/emmax/School/EE 469/lab3/bitwise_xor.sv Line: 17
+Info (12021): Found 2 design units, including 2 entities, in source file bitwise_or.sv
+    Info (12023): Found entity 1: bitwise_or File: C:/Users/emmax/School/EE 469/lab3/bitwise_or.sv Line: 3
+    Info (12023): Found entity 2: bitwise_or_testbench File: C:/Users/emmax/School/EE 469/lab3/bitwise_or.sv Line: 17
+Info (12021): Found 2 design units, including 2 entities, in source file bitwise_and.sv
+    Info (12023): Found entity 1: bitwise_and File: C:/Users/emmax/School/EE 469/lab3/bitwise_and.sv Line: 3
+    Info (12023): Found entity 2: bitwise_and_testbench File: C:/Users/emmax/School/EE 469/lab3/bitwise_and.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file alustim.sv
+    Info (12023): Found entity 1: alustim File: C:/Users/emmax/School/EE 469/lab3/alustim.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/emmax/School/EE 469/lab3/alu.sv Line: 3
+    Info (12023): Found entity 2: alu_testbench File: C:/Users/emmax/School/EE 469/lab3/alu.sv Line: 56
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/emmax/School/EE 469/lab3/adder.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file control.sv
+    Info (12023): Found entity 1: control File: C:/Users/emmax/School/EE 469/lab3/control.sv Line: 2
+Info (12021): Found 2 design units, including 2 entities, in source file mux64x2_1.sv
+    Info (12023): Found entity 1: mux64x2_1 File: C:/Users/emmax/School/EE 469/lab3/mux64x2_1.sv Line: 3
+    Info (12023): Found entity 2: mux64x2_1_testbench File: C:/Users/emmax/School/EE 469/lab3/mux64x2_1.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file mux64x4_1.sv
+    Info (12023): Found entity 1: mux64x4_1 File: C:/Users/emmax/School/EE 469/lab3/mux64x4_1.sv Line: 3
+    Info (12023): Found entity 2: mux64x4_1_testbench File: C:/Users/emmax/School/EE 469/lab3/mux64x4_1.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file cpu.sv
+    Info (12023): Found entity 1: cpu File: C:/Users/emmax/School/EE 469/lab3/cpu.sv Line: 1
+    Info (12023): Found entity 2: cpu_testbench File: C:/Users/emmax/School/EE 469/lab3/cpu.sv Line: 118
+Info (12021): Found 1 design units, including 1 entities, in source file flag_reg.sv
+    Info (12023): Found entity 1: flag_reg File: C:/Users/emmax/School/EE 469/lab3/flag_reg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux5x2_1.sv
+    Info (12023): Found entity 1: mux5x2_1 File: C:/Users/emmax/School/EE 469/lab3/mux5x2_1.sv Line: 3
+Error (10161): Verilog HDL error at cpu.sv(123): object "CLOCK_50" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/emmax/School/EE 469/lab3/cpu.sv Line: 123
+Error (10161): Verilog HDL error at cpu.sv(124): object "CLOCK_50" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/emmax/School/EE 469/lab3/cpu.sv Line: 124
+Info (144001): Generated suppressed messages file C:/Users/emmax/School/EE 469/lab3/output_files/Lab3.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4774 megabytes
+    Error: Processing ended: Thu May 08 22:55:03 2025
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:09
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/emmax/School/EE 469/lab3/output_files/Lab3.map.smsg.
+
+

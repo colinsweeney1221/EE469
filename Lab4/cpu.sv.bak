@@ -1,0 +1,52 @@
+
+module cpu ();
+
+    logic clk, reset;
+
+    // Program Count
+    logic [63:0] pcCurr, pcNext;
+    register pc (pcCurr, pcNext, 1'b1, 1'b0, clk);
+
+    // Add4
+    logic [63:0] add4;
+    logic unused1, unused 2;
+    adder nextInstruct (add4, unused1, unused2, 3'b010, pcCurr, 64'd4);
+
+    // Shift left 2
+    logic [63:0] immediate, leftShiftImm;
+    assign leftShiftImm = {immediate[61:0], 2'b0};
+
+    // Add PC + immediate
+    logic [63:0] ImmPlusPC;
+    logic unused3, unused4;
+    adder branchImm (ImmPlusPC, unused3, unused4, 3'b010, pcCurr, leftShiftImm);
+
+    // Branching logic
+    mux64x2_1 branch1 ();          // adding 4 or adding immediate
+
+    mux64x2_1 branch2 ();          // taking result of prev stage or register contents
+
+
+
+    // ALU contents to PC?
+
+    // Instruction Memory
+    logic [31:0] instruction;
+    instructmem InstructionMemory (pcCurr, instruction, clk);
+
+    // Instruction Datapath
+    
+
+    // Sign extend logic
+    logic [63:0] Imm12, Imm26, Imm19, Imm9;
+
+    mux64x4_1 extender (immediate, )
+
+
+
+
+    // ALU
+
+    // Data Memory
+
+endmodule

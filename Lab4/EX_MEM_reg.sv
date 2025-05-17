@@ -1,0 +1,41 @@
+module EX_MEM_reg (Rd, Rd_out, readData2, readData2_out, ALUResult, ALUResult_out,
+						zero, zero_out, negative, negative_out, carryout, carryout_out,
+						overflow, overflow_out, AddResult, AddResult_out, branch, branch_out, 
+						MemRead, MemRead_out, MemWrite, MemWrite_out, MemtoReg, MemtoReg_out, 
+						RegWrite, RegWrite_out, reset, writeEnable, clk);
+		
+		input clk, reset, writeEnable, zero, negative, carryout, overflow, branch, MemRead, MemWrite, MemtoReg, RegWrite;
+		input [4:0] Rd;
+		input [63:0] readData2, ALUResult, AddResult;
+		
+		output zero_out, negative_out, carryout_out, overflow_out, branch_out, MemRead_out, MemWrite_out, MemtoReg_out, RegWrite_out;
+		output [4:0] Rd_out;
+		output [63:0] readData2_out, ALUResult_out, AddResult_out;
+		
+		genvar i;
+		register_bit zero_bit (zero_out, zero, writeEnable, reset, clk);
+		register_bit negative_bit (negative_out, negative, writeEnable, reset, clk);
+		register_bit carryout_bit (carryout_out, carryout, writeEnable, reset, clk);		
+		register_bit overflow_bit (overflow_out, overflow, writeEnable, reset, clk);
+		register_bit branch_bit(branch_out, branch, writeEnable, reset, clk);
+		register_bit memread (MemRead_out, MemRead, writeEnable, reset, clk);
+		register_bit memwrite(MemWrite_out, MemWrite, writeEnable, reset, clk);
+		resister_bit mem2reg (MemtoReg_out, MemtoReg, writeEnable, reset, clk);
+		register_bit regwrite (RegWrite_out, RegWrite, writeEnable, reset, clk);
+		
+	
+	generate
+		for (i = 0; i < 5; i++) begin : instruction
+			register_bit rd (Rd_out[i], Rd[i], writeEnable, reset, clk);
+		end
+	endgenerate
+	
+	generate
+		for (i = 0; i < 64; i++) begin : bit_64
+			register_bit read2 (readData2_out[i], readData2[i], writeEnable, reset, clk);
+			register_bit aluresult (ALUResult_out[i], ALUResult[i], writeEnable, reset, clk);
+			register_bit addresult (AddResult_out[i], AddResult[i], writeEnable, reset, clk);
+		end
+	endgenerate
+endmodule
+
